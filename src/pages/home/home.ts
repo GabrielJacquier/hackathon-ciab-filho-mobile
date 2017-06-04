@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ExtratoPage } from '../extrato/extrato';
-import { MetaDetalhePage } from '../meta-detalhe/meta-detalhe';
-import { MetaCadastroPage } from '../meta-cadastro/meta-cadastro';
 
 /**
  * Generated class for the HomePage page.
@@ -45,20 +42,6 @@ export class HomePage {
   }
 
   onAddClick($event) {
-    this.navCtrl.push(MetaCadastroPage, {
-      //NavParams
-    });
   }
 
-  onExtratoClick($event) {
-    this.navCtrl.push(ExtratoPage, {
-      //NavParams
-    });
-  }
-
-  onItemClick($event) {
-    this.navCtrl.push(MetaDetalhePage, {
-      //NavParams
-    });
-  }
 }

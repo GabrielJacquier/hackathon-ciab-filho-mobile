@@ -6,22 +6,17 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>home</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>home</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <button ion-button color="primary" block (click)="onExtratoClick($event)">Extrato</button>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="onItemClick($event, item)">
-      {{ item }}
-    </button>
-  </ion-list>
 
-  <ion-fab right bottom>
-    <button ion-fab color="danger" (click)="onAddClick($event)"><ion-icon name="add"></ion-icon></button>
-  </ion-fab>
+
+    <ion-fab right bottom>
+        <button ion-fab color="danger" (click)="onAddClick($event)"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
 </ion-content>
