@@ -45,12 +45,6 @@
 </ion-header>
 
 <ion-content>
-  <ion-fab bottom right>
-    <button ion-fab mini style="width: 60px;height: 60px; background: url('/assets/serazinha.png')">
-    </button>
-  </ion-fab>
-
-
     <div [ngSwitch]="item">
         <span *ngSwitchCase="'extrato'">
           <ion-list>
@@ -116,5 +110,9 @@
             </ion-row>
 
         </ion-grid>
+        <ion-fab bottom right>
+            <button (click)="presentPopover($event)" ion-fab mini style="width: 60px; height: 60px; background: url('/assets/serazinha.png')">
+            </button>
+        </ion-fab>
     </div>
 </ion-content>

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { PopoverController } from 'ionic-angular';
+import { PopupoverPage } from '../popupover/popupover';
 
 /**
  * Generated class for the HomePage page.
@@ -16,7 +18,7 @@ export class HomePage {
   private item:any;
   private extratos:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public popoverCtrl: PopoverController) {
     this.item="extrato";
     this.extratos = [
       {
@@ -86,7 +88,9 @@ export class HomePage {
     console.log('ionViewDidLoad HomePage');
   }
 
-  onAddClick($event) {
+  presentPopover(event) {
+    let popover = this.popoverCtrl.create(PopupoverPage);
+    popover.present(event);
   }
 
 }
