@@ -6,18 +6,26 @@
 -->
 <ion-header>
 
-    <ion-navbar>
-
+    <ion-navbar text-right>
+        <div class="nivel">
+            Nível
+            <ion-icon name="star"></ion-icon> 3
+        </div>
     </ion-navbar>
-    <ion-toolbar padding>
-        <ion-row>
-            <ion-col col-2>
+    <ion-toolbar>
+        <div class="waves">
+            <div class="wave -one" style=""></div>
+            <div class="wave -two" style=""></div>
+            <div class="wave -three"></div>
+        </div>
+        <ion-row class="profile">
+            <ion-col col-3 class="foto">
                 <ion-thumbnail>
-                    <img src="../assets/tamires-thumb.jpg" class="img-circle">
+                    <img src="assets/tamires-thumb.jpg" class="img-circle">
                 </ion-thumbnail>
             </ion-col>
-            <ion-col col-10>
-                <h1>Tamires Polis</h1>
+            <ion-col col-9 class="informacoes">
+                <h1>Tamires</h1>
                 <div class="label">Saldo</div>
                 <div class="saldo">
                     <span class="moeda">R$</span>
