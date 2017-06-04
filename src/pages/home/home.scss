@@ -1,4 +1,15 @@
 page-home {
+  ion-navbar {
+    button.button {
+      padding:0 8px;
+
+      .button-inner {
+        font-size: 1.1rem;
+
+      }
+    }
+  }
+
     .profile {
         .foto {
             // padding-top: 12px;

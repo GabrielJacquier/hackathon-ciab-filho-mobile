@@ -1,0 +1,40 @@
+<div *ngIf="!accepted">
+  <!--<img src="assets/document.png"/>-->
+  <h1>Upgrade para Correntista</h1>
+  <p>Já temos todos os documentos necessários para abrir uma <strong>Conta Poupança</strong> para você, deseja fazer essa atualização e receber novos serviços ?</p>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <button ion-button block clear>Agora não</button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button block (click)="onAcceptClick($event)">Quero sim</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+
+<div *ngIf="accepted">
+  <div text-center>
+    <img src="assets/trophy.png"/>
+  </div>
+  <h1>Parabéns!</h1>
+  <p text-center>Agora você tem uma <strong>Conta Poupança</strong>,
+    a sua conta foi criada na mesma agência do seu responsável.
+    Anote os seus dados e acesso o aplicativo para correntista?
+    <br/>
+    <strong>ag 0386 c/c 88120-6</strong>
+  </p>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-3>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button clear>Baixar app</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+

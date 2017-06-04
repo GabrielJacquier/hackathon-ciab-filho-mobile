@@ -7,10 +7,13 @@
 <ion-header>
 
     <ion-navbar text-right>
-        <div class="nivel">
+        <!--<div class="nivel">
             Nível
             <ion-icon name="star"></ion-icon> 3
-        </div>
+        </div>-->
+        <button ion-button (click)="onUpgradeClick($event)">
+          Upgrade para Correntista
+        </button>
     </ion-navbar>
     <ion-toolbar>
         <!--<div class="waves">
@@ -110,9 +113,10 @@
             </ion-row>
 
         </ion-grid>
-        <ion-fab bottom right>
-            <button (click)="presentPopover($event)" ion-fab mini style="width: 60px; height: 60px; background: url('assets/serazinha.png')">
-            </button>
-        </ion-fab>
     </div>
+
+    <ion-fab bottom right>
+      <button (click)="presentPopover($event)" ion-fab mini style="width: 60px; height: 60px; background: url('assets/serazinha.png')">
+      </button>
+    </ion-fab>
 </ion-content>

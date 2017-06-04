@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PopoverController } from 'ionic-angular';
 import { PopupoverPage } from '../popupover/popupover';
+import { UpgradePage } from '../upgrade/upgrade';
 
 /**
  * Generated class for the HomePage page.
@@ -93,4 +94,8 @@ export class HomePage {
     popover.present(event);
   }
 
+  onUpgradeClick(event) {
+    let popover = this.popoverCtrl.create(UpgradePage);
+    popover.present();
+  }
 }
