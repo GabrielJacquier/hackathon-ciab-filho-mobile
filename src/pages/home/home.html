@@ -15,6 +15,67 @@
 
 <ion-content padding>
 
+    <ion-segment [(ngModel)]="item">
+        <ion-segment-button value="extrato">
+            Extrato
+        </ion-segment-button>
+        <ion-segment-button value="conquistas">
+            Conquistas
+        </ion-segment-button>
+    </ion-segment>
+
+    <div [ngSwitch]="item">
+        <span *ngSwitchCase="'extrato'">
+          <ion-list>
+            <ion-item *ngFor="let item of extratos">
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <div class="time">{{item.data}}</div>
+                    <h2>{{item.descricao}}</h2>
+                    <p>{{item.categoria}}</p>
+                  </ion-col>
+                  <ion-col text-right>
+                    <span class="price">R$ {{item.valor.toFixed(2).replace(".", ",")}}</span>
+        </ion-col>
+        </ion-row>
+        </ion-grid>
+        </ion-item>
+        </ion-list>
+        </span>
+
+        <ion-grid *ngSwitchCase="'conquistas'" class='grid-conquistas'>
+            <ion-row>
+                <ion-col col-4>
+                    <ion-icon name="medal" class="item-dourado"></ion-icon>
+                    <p>1 dias sem gastar</p>
+                </ion-col>
+                <ion-col col-4>
+                    <ion-icon name="medal" class="item-cinza"></ion-icon>
+                    <p>3 dias sem gastar</p>
+                </ion-col>
+                <ion-col col-4>
+                    <ion-icon name="trophy" class="item-cinza"></ion-icon>
+                    <p>7 dias sem gastar</p>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-4>
+                    <ion-icon name="medal" class="item-dourado"></ion-icon>
+                    <p>3% do dinheiro poupado</p>
+                </ion-col>
+                <ion-col col-4>
+                    <ion-icon name="medal" class="item-dourado"></ion-icon>
+                    <p>10% do dinheiro poupado</p>
+                </ion-col>
+                <ion-col col-4>
+                    <ion-icon name="trophy" class="item-dourado"></ion-icon>
+                    <p>25% do dinheiro poupado</p>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+
 
     <ion-fab right bottom>
         <button ion-fab color="danger" (click)="onAddClick($event)"><ion-icon name="add"></ion-icon></button>

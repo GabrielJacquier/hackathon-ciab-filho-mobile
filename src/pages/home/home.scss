@@ -1,3 +1,68 @@
 page-home {
-
+    .grid-conquistas {
+        font-size: 4em;
+        text-align: center;
+        p {
+            font-size: 13px;
+        }
+        .item-cinza {
+            color: #e5e5e5;
+        }
+        .item-dourado {
+            color: #FFD700;
+        }
+    }
+    ion-list.list {
+        margin-top: 25px;
+        ion-list-header {
+            border-top: 0;
+        }
+        ion-item.item-block {
+            background-color: #fff;
+            padding-left: 25px;
+            height: 94px;
+            div.item-inner {
+                border-bottom: none;
+            }
+            ion-label {
+                margin: 0 0;
+                padding-top: 5px;
+                padding-bottom: 7px;
+                border-left: 2px solid #EEE;
+                padding-left: 20px;
+                &:before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    // background: #6fc173;
+                    background: white;
+                    position: absolute;
+                    left: 20px;
+                    top: 20px;
+                    border-radius: 100%;
+                    border: 1px solid #E72C56;
+                }
+                h2 {
+                    font-size: 1.6rem;
+                    color: #888;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 150px;
+                }
+                p {
+                    color: #888;
+                }
+                .time {
+                    color: #888;
+                    font-size: 1.4rem;
+                }
+                .price {
+                    font-size: 2.0rem;
+                    // font-weight: bold;
+                    line-height: 62px;
+                    color: #666;
+                }
+            }
+        }
+    }
 }
