@@ -1,3 +1,27 @@
 page-login {
 
+  .content-md {
+    background: url('/assets/home.jpg');
+    background-position: right;
+  }
+
+  .logo {
+    margin-top: 120px;
+    text-align: center;
+    img {
+      width:220px;
+      margin: 0 auto;
+    }
+  }
+
+  .login {
+    background: white;
+    border-radius: 15px;
+    padding: 12px;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 70px;
+    left:40px;
+    right: 40px;
+  }
 }

@@ -13,11 +13,11 @@
         </div>
     </ion-navbar>
     <ion-toolbar>
-        <div class="waves">
+        <!--<div class="waves">
             <div class="wave -one"></div>
             <div class="wave -two"></div>
             <div class="wave -three"></div>
-        </div>
+        </div>-->
         <ion-row class="profile">
             <ion-col col-3 class="foto">
                 <ion-thumbnail>
@@ -26,7 +26,7 @@
             </ion-col>
             <ion-col col-9 class="informacoes">
                 <h1>Tamires</h1>
-                <div class="label">Saldo</div>
+                <div class="label">Saldo na conta</div>
                 <div class="saldo">
                     <span class="moeda">R$</span>
                     <span class="valor">73,90</span>
@@ -34,16 +34,6 @@
             </ion-col>
         </ion-row>
     </ion-toolbar>
-
-</ion-header>
-
-
-<ion-content padding>
-    <ion-fab top right style="position: absolute; top: -39px;">
-        <button ion-fab mini style="width: 60px;height: 60px; background: url('/assets/serazinha.png')">
-        </button>
-    </ion-fab>
-
     <ion-segment [(ngModel)]="item">
         <ion-segment-button value="extrato">
             Extrato
@@ -52,6 +42,14 @@
             Conquistas
         </ion-segment-button>
     </ion-segment>
+</ion-header>
+
+<ion-content>
+  <ion-fab bottom right>
+    <button ion-fab mini style="width: 60px;height: 60px; background: url('/assets/serazinha.png')">
+    </button>
+  </ion-fab>
+
 
     <div [ngSwitch]="item">
         <span *ngSwitchCase="'extrato'">
@@ -119,9 +117,4 @@
 
         </ion-grid>
     </div>
-
-
-    <ion-fab right bottom>
-        <button ion-fab color="danger" (click)="onAddClick($event)"><ion-icon name="add"></ion-icon></button>
-    </ion-fab>
 </ion-content>

@@ -4,31 +4,35 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
-
+<ion-header style="display:none">
   <ion-navbar>
     <ion-title>login</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
-  <ion-list>
+  <div class="logo">
+    <img src="assets/logo.png"/>
+  </div>
+  <div class="login">
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Celular</ion-label>
+        <ion-input type="text" value="(11) 97803-1234"></ion-input>
+      </ion-item>
+    </ion-list>
 
-    <ion-item>
-      <ion-label stacked>Username</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Senha</ion-label>
+        <ion-input type="password" value="1234"></ion-input>
+      </ion-item>
 
-    <ion-item>
-      <ion-label stacked>Password</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
+    </ion-list>
 
-  </ion-list>
-
-  <div padding>
-    <button ion-button color="primary" block (click)="onLoginClick($event)">Sign In</button>
+    <div>
+      <button ion-button color="dark" block (click)="onLoginClick($event)">Acessar</button>
+    </div>
   </div>
 </ion-content>
