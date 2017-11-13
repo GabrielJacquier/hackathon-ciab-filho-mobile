@@ -23,61 +23,61 @@ export class HomePage {
     this.item="extrato";
     this.extratos = [
       {
-        'data':'Hoje',
+        'data':'Today',
         'descricao':'Burger King',
         'categoria':'Food',
         'valor':24.50
       },
       {
-        'data':'Ontem',
+        'data':'Yestarday',
         'descricao':'Apple Store',
         'categoria':'Games',
         'valor':3.70
       },
       {
-        'data':'01/05/2017',
+        'data':'05/01/2017',
         'descricao':'Burger King',
         'categoria':'Food',
         'valor':13.22
       },
       {
-        'data':'01/05/2017',
+        'data':'05/01/2017',
         'descricao':'Netflix',
         'categoria':'Entertainment',
         'valor':16.90
       },
       {
-        'data':'28/04/2017',
+        'data':'04/28/2017',
         'descricao':'CVS',
         'categoria':'Retail',
         'valor':4.70
       },
       {
-        'data':'27/04/2017',
+        'data':'04/27/2017',
         'descricao':'Uber',
         'categoria':'Transport',
         'valor':12.70
       },
       {
-        'data':'01/05/2017',
+        'data':'04/26/2017',
         'descricao':'Mc Donalds',
         'categoria':'Food',
         'valor':13.22
       },
       {
-        'data':'01/05/2017',
+        'data':'04/25/2017',
         'descricao':'CVS',
         'categoria':'Retail',
         'valor':9.22
       },
       {
-        'data':'23/05/2017',
+        'data':'04/23/2017',
         'descricao':'Gymboree',
         'categoria':'Retail',
         'valor':4.70
       },
       {
-        'data':'22/04/2017',
+        'data':'04/22/2017',
         'descricao':'SmartFit',
         'categoria':'Health',
         'valor':59.90
