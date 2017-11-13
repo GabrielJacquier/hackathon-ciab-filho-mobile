@@ -12,7 +12,7 @@
             <ion-icon name="star"></ion-icon> 3
         </div>-->
         <button ion-button (click)="onUpgradeClick($event)">
-          Upgrade para Correntista
+          Upgrade to account holder
         </button>
     </ion-navbar>
     <ion-toolbar>
@@ -29,20 +29,20 @@
             </ion-col>
             <ion-col col-9 class="informacoes">
                 <h1>Tamires</h1>
-                <div class="label">Saldo na conta</div>
+                <div class="label">Account balance</div>
                 <div class="saldo">
-                    <span class="moeda">R$</span>
-                    <span class="valor">73,90</span>
+                    <span class="moeda">$</span>
+                    <span class="valor">73.90</span>
                 </div>
             </ion-col>
         </ion-row>
     </ion-toolbar>
     <ion-segment [(ngModel)]="item">
         <ion-segment-button value="extrato">
-            Extrato
+            Extract
         </ion-segment-button>
         <ion-segment-button value="conquistas">
-            Conquistas
+            Achievements
         </ion-segment-button>
     </ion-segment>
 </ion-header>
@@ -50,65 +50,65 @@
 <ion-content>
     <div [ngSwitch]="item">
         <span *ngSwitchCase="'extrato'">
-          <ion-list>
-            <ion-item *ngFor="let item of extratos">
-              <ion-grid>
-                <ion-row>
-                  <ion-col>
-                    <div class="time">{{item.data}}</div>
-                    <h2>{{item.descricao}}</h2>
-                    <p>{{item.categoria}}</p>
-                  </ion-col>
-                  <ion-col text-right>
-                    <span class="price">R$ {{item.valor.toFixed(2).replace(".", ",")}}</span>
-        </ion-col>
-        </ion-row>
-        </ion-grid>
-        </ion-item>
-        </ion-list>
+            <ion-list>
+                <ion-item *ngFor="let item of extratos">
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col>
+                                <div class="time">{{item.data}}</div>
+                                <h2>{{item.descricao}}</h2>
+                                <p>{{item.categoria}}</p>
+                            </ion-col>
+                            <ion-col text-right>
+                                <span class="price">$ {{item.valor.toFixed(2)}}</span>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-item>
+            </ion-list>
         </span>
 
         <ion-grid *ngSwitchCase="'conquistas'" class='grid-conquistas'>
             <ion-row>
                 <ion-col col-4>
                     <ion-icon name="card" class="item-dourado"></ion-icon>
-                    <p>Ativar o cartão</p>
+                    <p>Activate the card</p>
                 </ion-col>
                 <ion-col col-4>
                     <ion-icon name="cash" class="item-dourado"></ion-icon>
-                    <p>Primeira mesada</p>
+                    <p>First allowance</p>
                 </ion-col>
                 <ion-col col-4>
                     <ion-icon name="cart" class="item-dourado"></ion-icon>
-                    <p>Primeira compra</p>
+                    <p>First purchase</p>
                 </ion-col>
             </ion-row>
             <ion-row>
                 <ion-col col-4>
                     <ion-icon name="medal" class="item-dourado"></ion-icon>
-                    <p>5% do dinheiro poupado</p>
+                    <p>5% savings</p>
                 </ion-col>
                 <ion-col col-4>
                     <ion-icon name="medal" class="item-cinza"></ion-icon>
-                    <p>10% do dinheiro poupado</p>
+                    <p>10% savings</p>
                 </ion-col>
                 <ion-col col-4>
                     <ion-icon name="trophy" class="item-cinza"></ion-icon>
-                    <p>25% do dinheiro poupado</p>
+                    <p>25% savings</p>
                 </ion-col>
             </ion-row>
             <ion-row>
                 <ion-col col-4>
                     <ion-icon name="medal" class="item-dourado"></ion-icon>
-                    <p>1 dia sem gastar</p>
+                    <p>1 day without spending</p>
                 </ion-col>
                 <ion-col col-4>
                     <ion-icon name="medal" class="item-dourado"></ion-icon>
-                    <p>3 dias sem gastar</p>
+                    <p>3 days without spending</p>
                 </ion-col>
                 <ion-col col-4>
                     <ion-icon name="trophy" class="item-dourado"></ion-icon>
-                    <p>7 dias sem gastar</p>
+                    <p>7 days without spending</p>
                 </ion-col>
             </ion-row>
 

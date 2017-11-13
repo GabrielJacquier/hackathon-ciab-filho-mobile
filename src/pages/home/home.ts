@@ -25,7 +25,7 @@ export class HomePage {
       {
         'data':'Hoje',
         'descricao':'Burger King',
-        'categoria':'Alimentação',
+        'categoria':'Food',
         'valor':24.50
       },
       {
@@ -36,50 +36,50 @@ export class HomePage {
       },
       {
         'data':'01/05/2017',
-        'descricao':'Cantina do Pepe',
-        'categoria':'Alimentação',
+        'descricao':'Burger King',
+        'categoria':'Food',
         'valor':13.22
       },
       {
         'data':'01/05/2017',
         'descricao':'Netflix',
-        'categoria':'Entretenimento',
+        'categoria':'Entertainment',
         'valor':16.90
       },
       {
         'data':'28/04/2017',
-        'descricao':'Padaria Real',
-        'categoria':'Varejo',
+        'descricao':'CVS',
+        'categoria':'Retail',
         'valor':4.70
       },
       {
         'data':'27/04/2017',
-        'descricao':'Uber BR',
-        'categoria':'Transporte',
+        'descricao':'Uber',
+        'categoria':'Transport',
         'valor':12.70
       },
       {
         'data':'01/05/2017',
-        'descricao':'Cantina do Pepe',
-        'categoria':'Alimentação',
+        'descricao':'Mc Donalds',
+        'categoria':'Food',
         'valor':13.22
       },
       {
         'data':'01/05/2017',
-        'descricao':'Papelaria Silvana',
-        'categoria':'Varejo',
+        'descricao':'CVS',
+        'categoria':'Retail',
         'valor':9.22
       },
       {
         'data':'23/05/2017',
-        'descricao':'Padaria Real',
-        'categoria':'Varejo',
+        'descricao':'Gymboree',
+        'categoria':'Retail',
         'valor':4.70
       },
       {
         'data':'22/04/2017',
         'descricao':'SmartFit',
-        'categoria':'Saúde',
+        'categoria':'Health',
         'valor':59.90
       }
     ];
